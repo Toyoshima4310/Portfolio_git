@@ -1,0 +1,134 @@
+@charset "utf8";
+
+/* スマートフォン版 */
+@media (max-width:767px) {
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-size:3vw;
+    color:#505050;
+  }
+
+  .logo {
+    font-size:5.5vw;
+  }
+
+  .topLeft {
+    width:40vw;
+    height:60vw;
+    border:solid 1px black;
+    margin:0 2vw;
+  }
+
+  .topRight {
+    font-size:3.2vw;
+  }
+
+  .title {
+    font-size:7vw;
+    margin-top:25vw;
+  }
+
+  .title span {
+    color:#7DA8ED;
+  }
+
+  .link {
+    background-color:#EBFFFD;
+    display:inline-block;
+  }
+
+  .link a {
+    text-decoration:none;
+    color:#505050;
+    padding:1rem 12vw;
+  }
+
+  .link:hover {
+    background-color:#CCF3FF;
+  }
+
+  .blank {
+    width:100%;
+    height:60vw;
+    background-color: gray;
+  }
+
+  .left {
+    width:46vw;
+    height:30vw;
+    border: solid 1px black;
+    margin:0 2vw;
+  }
+
+  .workTitle {
+    font-size:4vw;
+  }
+
+  .detail {
+    background-color:#EBFFFD;
+    margin:0 2vw;
+  }
+
+  .detail span {
+    font-size:1.5vw;
+  }
+
+  /* .lngImg {
+    width:30vw;
+    height:30vw;
+  } */
+
+  .lngName {
+    font-size:4vw;
+  }
+
+  .lngName span {
+    color:#92CCF7;
+  }
+
+  .lngText {
+    font-size:3vw;
+  }
+
+  .proText {
+    width:88vw;
+    margin:auto;
+  }
+
+  .input {
+    border:solid 1px #7DA8ED;
+    width:60vw;
+    padding:3vw;
+    margin:3vw 0 3vw 20vw;
+  }
+
+  .submit {
+    background-color:#DFFCFB;
+    border:solid 1px #DFFCFB;
+    width:20vw;
+    height:10vw;
+    margin:5vw 0 0 40vw;
+    border-radius:3vw;
+  }
+
+  .footer {
+    background-color:#DFFCFB;
+    height:10vw;
+    padding-top:3vw;
+    margin-top:20vw;
+  }
+
+}
+
+/* スマートフォン版ここまで */
+
+
+/* パソコン版スタート */
+
+@media (min-width:768px) {
+  
+}
