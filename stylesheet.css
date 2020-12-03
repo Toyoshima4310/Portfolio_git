@@ -78,10 +78,17 @@
     font-size:1.5vw;
   }
 
-  /* .lngImg {
+  .yaimaInd {
+    height:72vw;
+  }
+
+  .portInd {
+    height:50vw;
+  }
+
+   .lngImg {
     width:30vw;
-    height:30vw;
-  } */
+  } 
 
   .lngName {
     font-size:4vw;

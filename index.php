@@ -3,7 +3,7 @@
       
 
       <div id="perform" class="title text-center"><span>過</span>去の実績</div>
-      <div class="works mt-4">
+      <div id="show" class="works mt-4">
         <div class="work mb-5">
           <div class="d-flex">
             <div class="left">実績サムネ</div>
@@ -16,10 +16,30 @@
                 担当させていただきました。
             </div>
           </div>
-          <div class="mt-1 py-3 pr-3 text-right detail">
+          <div class="yaimaInd mt-3 mx-3" v-if="myVisible1">
+            錬成教室 やいま塾 様  (<a href="https://やいま塾.com">https://やいま塾.com</a>)<br><br>
+
+            石垣島にある学習塾のホームページ制作を担当させていただきました。
+            保護者様、生徒様にとって親近感のある、見やすく優しいデザインを心がけました。<br>
+            アクセントカラーには黄緑色と桜色を選択肢、石垣島の自然と、
+            合格のイメージを表現しました。<br>
+            合格体験記やお知らせなどのデータは、データベースを用いて
+            管理しています。<br>
+            作成に引き続き、管理や更新作業も担当させていただいております。<br><br>
+
+            使用スキル<br>
+            HTML CSS Bootstrap<br>
+            JavaScript(Vue.js) PHP MySQL<br>
+
+          </div>
+          <div class="mt-1 py-3 pr-3 text-right detail" v-if="!myVisible1" v-on:click="isShow1">
             詳細を見る　<span>▼</span>
           </div>
+          <div class="mt-1 py-3 pr-3 text-right detail" v-if="myVisible1" v-on:click="isShow1">
+            閉じる　<span>▲</span>
+          </div>
         </div>
+        
         <div class="work mb-5">
           <div class="d-flex">
             <div class="left">実績サムネ</div>
@@ -31,15 +51,48 @@
                 作成しました。<br>
             </div>
           </div>
-          <div class="mt-1 py-3 pr-3 text-right detail">
+          
+          <div class="portInd my-3 mx-3" v-if="myVisible2">
+            ポートフォリオサイト  (当サイト)<br><br>
+
+            できるだけシンプルで、見やすい作りを目指しました。<br>
+            アクセントカラーは青系の色で統一し、<br>
+            配置に関しても成果物や言語スキルの部分で反復を用いて、統一感を出しました。
+            Wordpressのプラグインを用いて、フォームの実装も行っております。<br><br>
+
+            使用スキル<br>
+            HTML CSS Bootstrap<br>
+            JavaScript(Vue.js) PHP<br>
+          </div>
+          <div class="mt-1 py-3 pr-3 text-right detail" v-if="!myVisible2" v-on:click="isShow2">
             詳細を見る　<span>▼</span>
           </div>
+          <div class="mt-1 py-3 pr-3 text-right detail" v-if="myVisible2" v-on:click="isShow2">
+            閉じる　<span>▲</span>
+          </div>
         </div>
+        <script>
+          new Vue ({
+            el: '#show',
+            data: {
+              myVisible1: false,
+              myVisible2: false
+            },
+            methods: {
+              isShow1: function(){
+                this.$data.myVisible1 = !this.$data.myVisible1;
+              },
+              isShow2: function(){
+                this.$data.myVisible2 = !this.$data.myVisible2;
+              }
+            }
+          })
+        </script>
       </div>
 
       <div id="skills" class="title text-center"><span>言</span>語スキル</div>
       <div class="container-fluid">
-        <div class="row">
+        <div class="row mx-auto">
           <div class="col-6 mt-5">
             <div class="lngImg"><img src="./images/html5Logo.png" class="img-fluid"></div>
             <div class="lngName my-1">
