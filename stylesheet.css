@@ -47,6 +47,7 @@
     text-decoration:none;
     color:#505050;
     display:block;
+    padding:3vw;
   }
 
   .link:hover {
@@ -186,7 +187,6 @@
 
   .link {
     background-color:#EBFFFD;
-    padding:1.5vw 3vw;
     cursor:pointer;
   }
 
@@ -194,6 +194,7 @@
     text-decoration:none;
     color:#505050;
     display:block;
+    padding:1.5vw 3vw;
   }
 
   .link:hover {

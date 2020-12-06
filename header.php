@@ -20,12 +20,12 @@
       <div class="logo my-3 text-center">My Portfolio Site</div>
       
       <div class="header  d-flex justify-content-center d-md-none">
-        <div class="link flex-fill text-center py-3"><a href="#perform">過去の実績</a></div>
-        <div class="link flex-fill text-center py-3"><a href="#skills">言語スキル</a></div>
+        <div class="link flex-fill text-center"><a href="#perform">過去の実績</a></div>
+        <div class="link flex-fill text-center"><a href="#skills">言語スキル</a></div>
       </div>
       <div class="header d-flex justify-content-center">
-        <div class="link flex-fill text-center py-3"><a href="#profile">プロフィール</a></div>
-        <div class="link flex-fill text-center py-3"><a href="#contact">お問い合わせ</a></div>
+        <div class="link flex-fill text-center"><a href="#profile">プロフィール</a></div>
+        <div class="link flex-fill text-center"><a href="#contact">お問い合わせ</a></div>
       </div>
     </div>
 
